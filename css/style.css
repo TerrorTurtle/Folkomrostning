@@ -1,4 +1,57 @@
-. body{
-    background-size: 100%;
-    background-image: url(pictures/Foliage-Cover);
+html {
+    margin:0;
+    padding: 0;
+}
+
+body {
+   background-size: 100%;
+    background-image: url("../pictures/FoliageCover.jpg");
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+.greenBox {
+    margin: 0;
+    display: block;
+    width: 100%;
+    background-color:#006400;
+    height: 50px;
+    opacity: 0.7;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+
+
+}
+
+p {
+    color: white;
+    margin:0;
+}
+
+.dropdown {
+    float:right;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+form {
+    color: white;
+    width: 60%;
+    margin: auto auto;
+    height: 50%;
+    padding-bottom: 50px;
+     padding-top: 50px;
+    line-height: 30px;
+
+
+}
+
+.formalia {
+    margin: auto auto;
+    width: 50%;
+    border: solid black;
+    margin top: 40px;
+
 }
