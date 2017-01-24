@@ -28,6 +28,12 @@ body {
 p {
     color: white;
     margin:0;
+    font: roboto;
+}
+
+h3 {
+    color: white;
+    font: alegrey;
 }
 
 .dropdown {
@@ -48,7 +54,7 @@ form {
 
 }
 
-.formalia {
+#formalia {
     margin: auto auto;
     width: 50%;
     border: solid black;
