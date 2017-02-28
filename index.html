@@ -16,7 +16,15 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.post("form.php", $("form").serialize());
 
+    });
+});
+</script>
 
 
             <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -47,21 +55,25 @@
     <br>
 
 <div class = "formalia" style = "background-color:rgba(0, 0, 0, 0.5);">
-    <form>
+    <form >
   <div class="form-group">
-    <label for="formGroupExampleInput">Namn</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Morgan Doe">
+    <label for="textinput">Namn</label>
+    <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Morgan Doe">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput2">Ort</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Umeå">
+    <label for="textinput">Ort</label>
+    <input type="text" name="ort" class="form-control" id="formGroupExampleInput2" placeholder="Umeå">
   </div>
    <div class="form-group">
-    <label for="formGroupExampleInput3">Mail adress</label>
-    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Morgan.Doe@gmail.com">
+    <label for="textinput">Mail adress</label>
+    <input type="text" name="mail" class="form-control" id="formGroupExampleInput3" placeholder="Morgan.Doe@gmail.com">
   </div>
+    <button >Submit</button>
 </form>
     </div>
 
     </body>
 </html>
+
+<!--type="submit"-->
+
